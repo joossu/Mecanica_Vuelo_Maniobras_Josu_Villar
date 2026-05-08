@@ -7,9 +7,9 @@ V = 30:1:340;
 T_reactor = 15800 * ones(size(V)); 
 
 % En un motor alternativo + hélice usamos una velocidad inventada (sabemos
-% que a bajas velocidades da mas empuje). Sabemos que a Mach 0,8 dan
+% que a bajas velocidades da mas empuje). Vamos a suponer que a 50 m/s dan
 % el mismo empuje. Así podemos calcular qué potencia constante tendría la hélice.
-V_ref = 272; % Mach 0,8
+V_ref = 50; 
 P_constante = 15800 * V_ref; 
 
 % Calculamos la fuerza de la hélice 
