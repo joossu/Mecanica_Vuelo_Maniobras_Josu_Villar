@@ -1,15 +1,15 @@
 % DEMOSTRACIÓN: VARIACIÓN DEL EMPUJE CON LA VELOCIDAD (Punto Extra)
 
 % Definimos un rango de velocidades
-V = 30:1:160; 
+V = 30:1:340; 
 
 % En un turborreactor nos da igual la velocidad, el C-101EB siempre da unos 15800 N
 T_reactor = 15800 * ones(size(V)); 
 
 % En un motor alternativo + hélice usamos una velocidad inventada (sabemos
-% que a bajas velocidades da mas empuje). Vamos a suponer que a 50 m/s dan
+% que a bajas velocidades da mas empuje). Sabemos que a Mach 0,8 dan
 % el mismo empuje. Así podemos calcular qué potencia constante tendría la hélice.
-V_ref = 50; 
+V_ref = 272; % Mach 0,8
 P_constante = 15800 * V_ref; 
 
 % Calculamos la fuerza de la hélice 
